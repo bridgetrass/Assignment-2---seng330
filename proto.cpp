@@ -12,13 +12,13 @@
 
 class proto{
 public:
-    virtual void slap_stick() = 0;
+    virtual void add_equipment() = 0;
 };
 
 class Elliptical: public proto
 {
 public:
-    void slap_stick()
+    void add()
     {
         std::cout << "Elliptical added to gym\n";
     }
@@ -26,7 +26,7 @@ public:
 class Row: public proto
 {
 public:
-    void slap_stick()
+    void add_equipment()
     {
         std::cout << "Rowing machine added to gym\n";
     }
@@ -34,7 +34,7 @@ public:
 class Tredmill: public proto
 {
 public:
-    void slap_stick()
+    void add_equipment()
     {
         std::cout << "Tredmill added to gym\n";
     }
