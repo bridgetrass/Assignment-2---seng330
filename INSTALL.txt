@@ -1,0 +1,5 @@
+To use this program, install Xcode on macOS.
+Use the command line, navigate to the directory.
+Type the following commands:
+    1) g++ main.cpp
+    2) ./a.out
