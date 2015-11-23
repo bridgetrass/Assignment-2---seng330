@@ -1,0 +1,45 @@
+/* 	Google protocol buffer for building a Character
+
+*/
+
+message Character{
+  required string name = 1;
+  required int speed = 2;
+  optional int age= 3;
+  required int number_of_lives=4;
+
+  string character_identity{
+    Main_player= 0;
+  }
+
+  int location{
+  	required int x;
+  	required int y;
+  }
+
+  message attack {
+    required string number = 1;
+  }
+
+  int heath{
+  	int healthbar;
+  }
+}
+
+message Teams{
+	required string team1=1;
+	required string team2=2;
+
+	enum character_list{
+		team1 =0;
+		team2 =1;
+	}
+
+	string current_turn{
+		string current_player_turn;
+	}
+}
+
+message Game{
+	enum current positions;
+}
